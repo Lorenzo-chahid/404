@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(to right, #756bd1, #7477d7, #7583dc, #788fe1, #7d9ae4, #71a3e7, #66abe8, #5fb2e8, #41b8e3, #29bdd9, #26c0cc, #3bc3bb);
+    background-repeat: no-repeat;
+}
+img {
+    margin-top: 20%;
+    margin-left: -25%;
+    width: 90%;
+    opacity: 0.9;
+}
+
+.test{
+    width: 60%;
+    margin:auto;
+}
+
+.error{
+    position: relative;
+    left: 8em;
+    top: 1em;
+    font-size: 100px;
+
+}
+
+
+/*************** CLOUD *******************/
+
+.cloud {
+    animation-duration: 2s;
+    animation-name: cloud-side;
+}
+
+@keyframes cloud-slide {
+    from {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(150px);
+    }
+
+    60% {
+        transform: translateX(150px) rotate(30deg);
+    }
+
+    80% {
+        transform: translate(100px, 80px) rotate(30deg);
+    }
+
+    to {
+        transform: translate(100px, 80px) rotate(30deg);
+        border-radius: 30px;
+        background-color: red;
+    }
+}
+}
